@@ -80,7 +80,8 @@ function tessellation(level){
     }
     // alert(stk.length);
 }
-tessellation(2);
+tessellation(6);
 vert=instantiate(poly);
 wgpu.bindvertex(vert);
+
 main();
