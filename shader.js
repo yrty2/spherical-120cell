@@ -1,4 +1,4 @@
-const geo=new geometry(0.2,3);
+const geo=new geometry(1,3);
 const wgpu=new WGPU(geo,8,`
 struct Uniforms {
     constants:vec4<f32>,
@@ -55,4 +55,5 @@ async function main(){
         requestAnimationFrame(gameloop);
     }
     gameloop();
+
 }
