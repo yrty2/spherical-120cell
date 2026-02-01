@@ -58,7 +58,7 @@ function tessellation(level){
                 let safe=true;
                 const cent=geo.refrection(p.center,n);
                 if(stk.findIndex(e=>geo.distance(e.center,cent)<geo.radius*0.3)!=-1){
-                    // safe=false;
+                    safe=false;
                 }
                 if(safe){
                     newdata.push({
@@ -85,3 +85,4 @@ vert=instantiate(poly);
 wgpu.bindvertex(vert);
 
 main();
+
